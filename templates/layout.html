@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>	
+	<head>
+		<meta charset="utf-8">
+
+		<title>Databook</title>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"/>
+
+
+	</head>
+	<body>
+			{% include 'navbar.html' %}
+			<div class="container">
+			{% include 'messages.html'%}
+			{% block body %} {% endblock %}
+			</div>
+			<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+	</body>
+</html>

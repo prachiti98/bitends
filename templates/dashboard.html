@@ -1,0 +1,37 @@
+
+{% extends 'layout.html' %}
+
+{% block body %}
+	
+	<br>
+	<table class="Dashboard" border="10" width="100%">
+		<thead>
+		<tr>
+			<th>ID</th>
+			<th>CUSTOMER-NAME</th>
+			<th>PRODUCT-NAME</th>
+			<th>AMOUNT</th>
+			<th>COSTAMOUNT</th>
+			
+			
+		</tr>
+		</thead>
+		<tbody>
+			{% for x in data %}
+				<tr>
+					<th scope="row">{{x.ID}}</th>
+					<td>{{x.CUSTOMER_NAME}}</td>
+					<td>{{x.PRODUCT_NAME}}</td>
+					<td>{{x.AMOUNT}}</td>
+					<td>{{x.COSTPRICE}}</td>
+				</tr>
+			{% endfor %}
+		</tbody>
+	</table>
+	<a class = "btn btn-default" href= "{{ url_for('profit') }}" >Get Profits</a>
+    <a class = "btn btn-default" href= "{{ url_for('bestcustomer') }}" >Best Customer</a>
+    <a class = "btn btn-default" href= "{{ url_for('bestproduct') }}" >Best Product</a> 
+    <a class = "btn btn-default" href= "{{ url_for('graphs') }}" >Graphical Analysis</a>  
+			
+
+{% endblock %}

@@ -1,0 +1,33 @@
+{% extends 'layout.html' %}
+
+{% block body %}
+	
+	<br>
+	<br>
+	<br>
+	<table class="Dashboard" border="10" width="100%">
+		<thead>
+		<tr>
+			
+			<th>CUSTOMER_NAME</th>
+			<th>TOTALGAIN_IN_RS</th>
+
+		</tr>
+		</thead>
+		<tbody>
+    		
+				<tr>
+					
+					<td>{{data.CUSTOMER_NAME}}</td>
+					<td>{{data.TOTALGAIN_IN_RS}}</td>
+				
+
+				</tr>
+			
+		</tbody>
+ 		</tbody>
+	</table>
+     
+			
+
+{% endblock %}
