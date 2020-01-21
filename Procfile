@@ -1,0 +1,1 @@
+web gunicorn mine:app
